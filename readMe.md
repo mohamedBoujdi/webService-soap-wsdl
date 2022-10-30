@@ -40,7 +40,9 @@ il est basé sur le protocole HTTP et utilise le langage XML pour échanger des 
    </soapenv:Body>
 </soapenv:Envelope>
 ```
+
 **reponse SOAP:**
+
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.com/">
    <soapenv:Header/>
@@ -108,6 +110,7 @@ il est basé sur le protocole HTTP et utilise le langage XML pour échanger des 
 source : https://www.tutorialspoint.com/wsdl/wsdl_quick_guide.htm
 
 - exemple d'un fichier xsd : 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/HelloWorld/" elementFormDefault="qualified" targetNamespace="http://www.example.org/HelloWorld/">
@@ -144,6 +147,7 @@ cette librairie nous permet d'ajouter des annotations sur les classes et les mé
 - **@WebService(name = "WSName", targetNamespace = "http://www*boujdi.ma/WSName/")** : cette annotation permet de définir le nom du service web et son namespace.
 
    comme par exemple :
+   
     ```java
     @WebService(serviceName = "BanqueWS")
     public class BanqueService {
