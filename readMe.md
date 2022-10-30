@@ -123,7 +123,11 @@ source : https://www.tutorialspoint.com/wsdl/wsdl_quick_guide.htm
 
 source : https://www.tutorialspoint.com/wsdl/wsdl_quick_guide.htm
 
-les deux fichiers sont generés automatiquement par la **librairie JAX-WS**.
+les librairies qui interviennent dans la création du web service SOAP sont :
+- **jaxb-api-2.3.0.jar**: c'est une librairie qui permet de générer des classes java à partir d'un fichier xsd.
+
+
+- les deux fichiers sont generés automatiquement par la **librairie JAX-WS**.
 est une API Java qui permet de créer des services web SOAP.
 
 cette librairie est incluse dans le JDK 6 et supérieur mais pour le jdk 17 il faut l'ajouter manuellement.
