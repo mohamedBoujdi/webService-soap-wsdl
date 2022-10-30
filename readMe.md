@@ -11,8 +11,15 @@ notre projet consiste à créer un web service SOAP avec java , JAX-WS ,.Net et 
 ### objectifs
 - créer un web service SOAP avec java (SKELETON)
 - consommer le web service SOAP avec java (client->STUB)
+  - **Créer un Client SOAP Java** [Repo]( https://github.com/mohamedBoujdi/Client-Soap-Java.git) :link: (apres avoir génerer le proxy avec wsimport)
+  ![client](clientJ.png)
+  - **resultat:**
+
+    ![client](clientJ2.png)
 - consommer le web service SOAP avec .net (client->STUB)
+  - Créer un Client SOAP .Net
 - consommer le web service SOAP avec PHP (client->STUB)
+  - Créer un Client SOAP PHP
 
 ### **1- Création du web service SOAP avec java**
 

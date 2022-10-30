@@ -7,7 +7,7 @@ import jakarta.xml.bind.annotation.XmlTransient;
 
 import java.util.Date;
 
-@XmlRootElement(name = "compte")//this is the name of the root element in the XML file
+@XmlRootElement(name = "compte")//this is the name of the root element in the XML file avec lib jaxb-api
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Compte {
     private int code;
@@ -21,6 +21,13 @@ public class Compte {
     public Compte(int code, double solde) {
         this.code = code;
         this.solde = solde;
+    }
+
+    public Compte(int code, double v, Date date, Client client) {
+        this.code = code;
+        this.solde = v;
+        this.dateCreation = date;
+        this.client = client;
     }
 
     public Compte(int code, double v, Date date) {

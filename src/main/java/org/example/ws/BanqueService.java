@@ -25,10 +25,9 @@ public class BanqueService {
         //because it is a list of objects and we don't want to create a XML file for each object
         public List<Compte> listComptes() {
             List<Compte> comptes = new ArrayList<Compte>();
-            comptes.add(new Compte(1, Math.random() * 8000, new Date()));
-            comptes.add(new Compte(2, Math.random() * 9000, new Date()));
-            comptes.add(new Compte(3, Math.random() * 10000, new Date()));
-
+            comptes.add(new Compte(1, Math.random() * 9000, new Date(), new Client(1,"boujdi", "mohamed@gmail.com")));
+            comptes.add(new Compte(2, Math.random() * 9000, new Date(),new Client(2,"fadi", "hfjfhf@hotmail.com")));
+            comptes.add(new Compte(3, Math.random() * 10000, new Date(),new Client(3,"Mefdal", "iygabzuuzo@hotmail.com")));
             return comptes;
         }
 
